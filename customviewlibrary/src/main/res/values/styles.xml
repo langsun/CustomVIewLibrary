@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- MyDialog style -->
+    <style name="my_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- dialog底部弹出菜单动画 -->
+    <style name="bottom_menu_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/bottom_menu_enter</item>
+        <item name="@android:windowExitAnimation">@anim/bottom_menu_exit</item>
+    </style>
+
+    <!-- dialog样式 -->
+    <style name="dialog_custom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>    <!--是否浮在界面上-->
+        <item name="android:windowIsTranslucent">true</item> <!--是否半透明-->
+        <item name="android:windowNoTitle">false</item>       <!--是否有标题-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--窗口背景色透明-->
+        <!--<item name="android:windowBackground">@color/color_66000000</item> &lt;!&ndash;窗口背景色透明&ndash;&gt;-->
+        <item name="android:backgroundDimEnabled">true</item> <!--背景是否模糊显示-->
+    </style>
+
+    <!--个人中心，layout样式 -->
+    <declare-styleable name="CustomItemView">
+        <attr name="left_image" format="reference" />
+        <attr name="left_text" format="string" />
+        <attr name="left_text_size" format="integer" />
+        <attr name="left_text_color" format="reference" />
+        <attr name="right_image" format="reference" />
+        <attr name="right_text" format="string" />
+        <attr name="right_text_size" format="integer" />
+        <attr name="right_text_color" format="reference" />
+        <attr name="view_line_visible" format="boolean" />
+    </declare-styleable>
+</resources>

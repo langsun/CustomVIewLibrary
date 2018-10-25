@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--个人中心，layout样式 -->
+    <declare-styleable name="CustomItemView">
+        <attr name="left_image" format="reference" />
+        <attr name="left_text" format="string" />
+        <attr name="left_text_size" format="integer" />
+        <attr name="left_text_color" format="reference" />
+        <attr name="right_image" format="reference" />
+        <attr name="right_text" format="string" />
+        <attr name="right_text_size" format="integer" />
+        <attr name="right_text_color" format="reference" />
+        <attr name="view_line_visible" format="boolean" />
+    </declare-styleable>
+
+</resources>
